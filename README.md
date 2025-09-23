@@ -17,6 +17,7 @@ The profile page includes a custom calendar which populates after a call is made
 
 ## Tech Stack
 
+HTML, CSS, JAVASCRIPT, REACTJS, JSX, REST API, GITHUB, FIGMA, JSON
 
 
 ## Roadmap
