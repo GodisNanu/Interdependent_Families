@@ -1,3 +1,5 @@
+import "../blocks/page.css";
+
 function App() {
   return (
     <>
