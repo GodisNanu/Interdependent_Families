@@ -3,6 +3,7 @@ import "../blocks/page.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Loading from "./Preloader";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -58,6 +59,7 @@ function App() {
               /*
           Footer */}
             </div>
+            <Footer />
           </div>
         </>
       )}
