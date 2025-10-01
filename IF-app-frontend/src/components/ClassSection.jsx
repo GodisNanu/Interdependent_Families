@@ -1,9 +1,11 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import ClassCard from "./ClassCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getClasses } from "../utils/googleCalendarApi";
+import "../blocks/class.css";
 
 function ClassSection({ isLoggedIn, handleJoinClick }) {
   const [data, setData] = useState([]);
@@ -11,6 +13,7 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
   useEffect(() => {
     getClasses()
       .then((data) => {
+        console.log(data.items);
         const allClasses = data.items;
         const filteredClasses = allClasses.filter((event) => event.summary);
         const classData = filteredClasses.map((event) => {
@@ -31,8 +34,24 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
     infinite: true,
     centerMode: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (

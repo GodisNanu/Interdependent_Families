@@ -2,8 +2,8 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.8);
   padding-top: 300px;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .homepage__hero-section {
@@ -42,6 +42,7 @@
 .homepage__available-classes {
   width: 100%;
   color: rgba(255, 255, 255, 1);
+  background: rgba(49, 50, 65, 0.8);
 }
 
 .homepage__available-classes-title {
@@ -53,7 +54,7 @@
   position: relative;
 }
 
-.homepage__available-classes-cardlist {
+.homepage__available-classes-description {
   font-family: "LondrinaSolid-Light", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 38px;

@@ -8,6 +8,7 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
+  z-index: 100;
 }
 
 .header__logo {
@@ -30,7 +31,7 @@
 
 .header__navigation-profile-button {
   background-color: rgba(0, 0, 0, 1);
-  color: white;
+  color: blue;
   margin-left: 26px;
   border: none;
   border-radius: 8px;
@@ -49,7 +50,7 @@
 
 .header__logout-button {
   background-color: rgba(0, 0, 0, 1);
-  color: white;
+  color: yellow;
   border: none;
   border-radius: 8px;
   cursor: pointer;

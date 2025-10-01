@@ -59,7 +59,7 @@ function Homepage({ isLoggedIn, handleJoinClick }) {
             isLoggedIn={isLoggedIn}
             handleJoinClick={handleJoinClick}
           />
-          <p className="homepage__available-classes-cardlist">
+          <p className="homepage__available-classes-description">
             Coming soon... 2026 Summer Classes
           </p>
         </section>

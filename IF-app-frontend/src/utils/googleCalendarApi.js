@@ -9,6 +9,5 @@ const timeMin = new Date().toISOString();
 const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${timeMin}&maxResults=10&singleEvents=true&orderBy=startTime`;
 
 export const getClasses = () => {
-  console.log("getting classes from google calendar");
   return fetch(url).then(handleServerResponse);
 };
