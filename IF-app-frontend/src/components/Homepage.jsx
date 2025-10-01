@@ -1,8 +1,9 @@
 import heroImage from "../assets/Interderdependent Families Tree.png";
 import advertisement from "../assets/IF Membership Options.png";
 import "../blocks/homepage.css";
+import ClassSection from "./ClassSection";
 
-function Homepage({ handleJoinClick }) {
+function Homepage({ isLoggedIn, handleJoinClick }) {
   return (
     <>
       <main className="homepage">
@@ -54,6 +55,10 @@ function Homepage({ handleJoinClick }) {
           <h2 className="homepage__available-classes-title">
             Available Classes
           </h2>
+          <ClassSection
+            isLoggedIn={isLoggedIn}
+            handleJoinClick={handleJoinClick}
+          />
           <p className="homepage__available-classes-cardlist">
             Coming soon... 2026 Summer Classes
           </p>

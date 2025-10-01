@@ -52,7 +52,15 @@ function App() {
                 handleJoinClick={handleJoinClick}
               />
               <Routes>
-                <Route path="/" element={<Homepage />} />
+                <Route
+                  path="/"
+                  element={
+                    <Homepage
+                      isLoggedIn={isLoggedIn}
+                      handleJoinClick={handleJoinClick}
+                    />
+                  }
+                />
               </Routes>
               {/* Components of the
           Profile Page */
