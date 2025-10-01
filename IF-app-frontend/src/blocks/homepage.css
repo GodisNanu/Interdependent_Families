@@ -1,0 +1,78 @@
+.homepage {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 300px;
+}
+
+.homepage__hero-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.homepage__hero-section-image {
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.homepage__about-section {
+  color: rgba(255, 255, 255, 1);
+}
+
+.homepage__about-section-title {
+  font-family: "LondrinaSolid-Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  padding: 26px;
+  text-align: center;
+}
+
+.homepage__about-section-description {
+  font-family: "LondrinaSolid-Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  padding: 26px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+}
+
+.homepage__available-classes {
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.homepage__available-classes-title {
+  font-family: "LondrinaSolid-Regular", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  padding: 26px;
+  text-align: center;
+  position: relative;
+}
+
+.homepage__available-classes-cardlist {
+  font-family: "LondrinaSolid-Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  padding: 26px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.homepage__membership-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.homepage__membership-image {
+  max-width: 100%;
+  object-fit: fill;
+  justify-self: center;
+  margin: 0 auto;
+  padding: 26px;
+}

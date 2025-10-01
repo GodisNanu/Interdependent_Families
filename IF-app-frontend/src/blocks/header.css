@@ -2,28 +2,30 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 32px 0 28px;
   font-family: "LondrinaSolid-Regular", Times, serif;
   font-weight: 400;
   font-size: 48px;
   width: 100%;
-  background: rgba(0, 100, 10, 0.5);
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
 }
 
 .header__logo {
   border-radius: 45px;
   margin-right: 26px;
-  margin-left: 26px;
-  width: 256px;
-  height: 256px;
+  width: 192px;
+  height: 192px;
 }
 
 .header__date {
   margin: 26px;
-  color: rgba(190, 0, 5, 1);
+  color: rgba(255, 255, 255, 1);
   font-family: "LondrinaSolid-Light", Times, serif;
   font-weight: 300;
-  font-size: 48px;
+  font-size: 36px;
+  position: relative;
+  width: 100%;
+  text-align: right;
 }
 
 .header__navigation-profile-button {
@@ -67,7 +69,7 @@
 
 .header__login-button {
   background-color: rgba(0, 0, 0, 1);
-  color: white;
+  color: yellow;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -76,7 +78,7 @@
 
 .header__join-button {
   background-color: rgba(0, 0, 0, 1);
-  color: white;
+  color: blue;
   margin-left: 26px;
   border: none;
   border-radius: 8px;

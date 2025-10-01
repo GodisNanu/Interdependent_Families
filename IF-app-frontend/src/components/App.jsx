@@ -4,6 +4,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import Loading from "./Preloader";
 import Header from "./Header";
 import Footer from "./Footer";
+import Homepage from "./Homepage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,16 +51,15 @@ function App() {
                 handleLoginClick={handleLoginClick}
                 handleJoinClick={handleJoinClick}
               />
-              {/*Header*/
-              /* Components of the Homepage */
-              /* Components of the
+              <Routes>
+                <Route path="/" element={<Homepage />} />
+              </Routes>
+              {/* Components of the
           Profile Page */
               /* Components of the Staff Page */
-              /* Modals */
-              /*
-          Footer */}
+              /* Modals */}
+              <Footer />
             </div>
-            <Footer />
           </div>
         </>
       )}

@@ -18,11 +18,11 @@ function Header({
   return (
     <>
       <header className="header">
+        <p className="header__date">{currentDate}</p>
         <Link to="/">
           {" "}
           <img src={logo} alt="IF logo" className="header__logo" />
         </Link>
-        <p className="header__date">{currentDate}</p>
         {/* <div className="header__navigation-container">
             <button className="header__navigation-about-button"> About Us </button>
         </div> */}
