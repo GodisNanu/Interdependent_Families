@@ -1,3 +1,5 @@
+import "../blocks/class.css";
+
 function ClassCard({ isLoggedIn, item, handleJoinClick }) {
   return (
     <div className="class__card-content">

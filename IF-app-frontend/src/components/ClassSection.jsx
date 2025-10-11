@@ -13,7 +13,6 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
   useEffect(() => {
     getClasses()
       .then((data) => {
-        console.log(data.items);
         const allClasses = data.items;
         const filteredClasses = allClasses.filter((event) => event.summary);
         const classData = filteredClasses.map((event) => {
@@ -58,7 +57,7 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
     <>
       <section className="class__section">
         <div className="class__carousel">
-          <h2 className="class__carousel-header"> Fall 2025 </h2>
+          <h2 className="class__carousel-header"> Fall 2025 Classes</h2>
           <div className="class__carousel-feature">
             <Slider {...settings}>
               {data.map((event) => (

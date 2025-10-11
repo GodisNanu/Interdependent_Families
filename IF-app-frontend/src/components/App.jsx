@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
 import "../blocks/page.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
+import ProtectedRoute from "./ProtectedRoute";
 import Loading from "./Preloader";
 import Header from "./Header";
 import Footer from "./Footer";
 import Homepage from "./Homepage";
+import ProfilePage from "./ProfilePage";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeModal, setActiveModal] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,12 +28,18 @@ function App() {
 
   function handleLogoutClick() {
     setIsLoggedIn(false);
-    setActiveModal("logout");
+    {
+      /* setActiveModal("logout"); */
+    }
+    navigate("/");
   }
 
   function handleLoginClick() {
     setIsLoggedIn(true);
-    setActiveModal("login");
+    {
+      /* setActiveModal("login"); */
+    }
+    navigate("/profile");
   }
 
   function handleJoinClick() {
@@ -61,10 +71,19 @@ function App() {
                     />
                   }
                 />
+                <Route
+                  path="/profile"
+                  element={
+                    <ProtectedRoute isLoggedIn={isLoggedIn}>
+                      <ProfilePage
+                        isLoggedIn={isLoggedIn}
+                        handleJoinClick={handleJoinClick}
+                      />
+                    </ProtectedRoute>
+                  }
+                />
               </Routes>
-              {/* Components of the
-          Profile Page */
-              /* Components of the Staff Page */
+              {/* Components of the Staff Page */
               /* Modals */}
               <Footer />
             </div>
