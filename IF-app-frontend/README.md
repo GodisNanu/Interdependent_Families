@@ -28,7 +28,7 @@ Later plans to implement a staff signin and features just for staff and manageen
 
 ## Links
 Project Deployed at:
-https://github.com/GodisNanu/Interdependent_Families/deployments/github-pages
+https://godisnanu.github.io/Interdependent_Families/
 
 # React + Vite
 
