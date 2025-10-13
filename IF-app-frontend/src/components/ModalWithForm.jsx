@@ -13,11 +13,14 @@ function ModalWithForm({
   return (
     <div
       onClick={handleOutsideClick}
-      className={`modal ${isOpen ? "modal_opened" : ""}`}
+      className={`modal modal__default ${isOpen ? "modal_opened" : ""}`}
     >
       <div className="modal__content ">
         <h2 className="modal__title ">{title}</h2>
-        <button onClick={onClose} src="" className="modal__close "></button>
+        <button onClick={onClose} className="modal__close ">
+          {" "}
+          X{" "}
+        </button>
         <form action="" className="modal__form" onSubmit={handleSubmit}>
           {children}
           <button type="submit" className="modal__submit" disabled={!isValid}>

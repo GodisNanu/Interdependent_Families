@@ -10,6 +10,7 @@ import ProfilePage from "./ProfilePage";
 import JoinModal from "./JoinModal";
 import AddClassModal from "./AddClassModal";
 import LogoutModal from "./LogoutModal";
+import LoginModal from "./LoginModal";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,11 +23,13 @@ function App() {
   /* const [isLoading, setIsLoading] = useState(false); */
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeModal, setActiveModal] = useState("");
+  const [newError, setNewError] = useState("");
 
   const navigate = useNavigate();
 
   const onClose = () => {
     setActiveModal("");
+    setNewError("");
   };
 
   const handleOutsideClick = (e) => {
@@ -41,6 +44,12 @@ function App() {
     navigate("/");
   };
 
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+    navigate("/profile");
+    setActiveModal("");
+  };
+
   function handleAddClassClick() {
     setActiveModal("add-class");
   }
@@ -50,11 +59,7 @@ function App() {
   }
 
   function handleLoginClick() {
-    setIsLoggedIn(true);
-    {
-      /* setActiveModal("login"); */
-    }
-    navigate("/profile");
+    setActiveModal("login");
   }
 
   function handleJoinClick() {
@@ -117,6 +122,14 @@ function App() {
                 isOpen={activeModal === "join-modal"}
                 handleOutsideClick={handleOutsideClick}
                 onClose={onClose}
+              />
+              <LoginModal
+                handleOutsideClick={handleOutsideClick}
+                isOpen={activeModal === "login"}
+                handleLogin={handleLogin}
+                onClose={onClose}
+                handleJoinClick={handleJoinClick}
+                newError={newError}
               />
               <AddClassModal
                 isOpen={activeModal === "add-class"}

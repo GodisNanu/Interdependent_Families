@@ -8,17 +8,15 @@ const LogoutModal = ({ handleOutsideClick, isOpen, handleLogout, onClose }) => {
   return (
     <div
       className={`modal logout-modal ${isOpen ? "logout__modal_opened" : ""}`}
+      onClick={handleOutsideClick}
     >
-      <div className="logout__modal-overlay" onClick={handleOutsideClick}>
-        <div className="logout__modal-content">
-          <p className="logout__modal-title">
-            {" "}
-            Are you sure you want to logout?
-          </p>
-          <button className="logout__modal-close" onClick={onClose}>
-            {" "}
-            X{" "}
-          </button>
+      <div className="logout__modal-content">
+        <p className="logout__modal-title"> Are you sure you want to logout?</p>
+        <button className="logout__modal-close" onClick={onClose}>
+          {" "}
+          X{" "}
+        </button>
+        <div className="logout__modal-buttons">
           <button
             className="logout__modal-confrim-button"
             onClick={handleLogout}

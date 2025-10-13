@@ -27,11 +27,12 @@
   position: relative;
   padding: 38px;
   width: 75%;
-  height: 75%;
+  height: 50%;
   border: 2px solid rgba(89, 206, 89, 0.35);
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 1000;
+  margin: 200px auto;
 }
 
 .logout__modal_opened {
@@ -44,6 +45,7 @@
   font-weight: 400;
   font-size: 48px;
   padding: 26px;
+  text-align: center;
 }
 
 .logout__modal-close {
@@ -62,6 +64,14 @@
   z-index: 1001;
 }
 
+.logout__modal-buttons {
+  padding-top: 100px;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .logout__modal-confrim-button {
   color: yellow;
   border: none;
@@ -72,6 +82,7 @@
   cursor: pointer;
   padding: 26px;
   margin: 10px;
+  align-self: center;
 }
 
 .logout__modal-cancel-button {
@@ -84,6 +95,15 @@
   cursor: pointer;
   padding: 26px;
   margin: 10px;
+}
+
+.logout__modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
