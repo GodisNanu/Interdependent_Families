@@ -9,6 +9,7 @@ import Homepage from "./Homepage";
 import ProfilePage from "./ProfilePage";
 import JoinModal from "./JoinModal";
 import AddClassModal from "./AddClassModal";
+import LogoutModal from "./LogoutModal";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,16 +35,18 @@ function App() {
     }
   };
 
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setActiveModal("");
+    navigate("/");
+  };
+
   function handleAddClassClick() {
     setActiveModal("add-class");
   }
 
   function handleLogoutClick() {
-    setIsLoggedIn(false);
-    {
-      /* setActiveModal("logout"); */
-    }
-    navigate("/");
+    setActiveModal("logout-modal");
   }
 
   function handleLoginClick() {
@@ -118,6 +121,12 @@ function App() {
               <AddClassModal
                 isOpen={activeModal === "add-class"}
                 handleOutsideClick={handleOutsideClick}
+                onClose={onClose}
+              />
+              <LogoutModal
+                handleOutsideClick={handleOutsideClick}
+                isOpen={activeModal === "logout-modal"}
+                handleLogout={handleLogout}
                 onClose={onClose}
               />
               {/* Components of the Staff Page */
