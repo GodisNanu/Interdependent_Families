@@ -2,15 +2,16 @@ import { useState } from "react";
 import "../blocks/join.css";
 import Loading from "./Preloader";
 
-function JoinModal({ handleOutsideClick, isOpen, onClose }) {
+function JoinModal({ isOpen, handleOutsideClick, onClose }) {
   const [isLoading, setIsLoading] = useState(true);
   const handleIframeLoad = () => {
     setIsLoading(false);
   };
+
   return (
     <>
       <div
-        className={`modal join__modal ${isOpen ? "join__modal_opened" : ""}`}
+        className={`modal ${isOpen ? "join__modal_opened" : ""}`}
         onClick={handleOutsideClick}
       >
         <div className="join__modal-content">

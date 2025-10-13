@@ -11,17 +11,17 @@ import JoinModal from "./JoinModal";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  /* const [isLoading, setIsLoading] = useState(false); */
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [activeModal, setActiveModal] = useState("");
-
-  const navigate = useNavigate();
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
+
+  /* const [isLoading, setIsLoading] = useState(false); */
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [activeModal, setActiveModal] = useState("");
+
+  const navigate = useNavigate();
 
   const onClose = () => {
     setActiveModal("");
@@ -54,7 +54,7 @@ function App() {
   }
 
   function handleJoinClick() {
-    setActiveModal("join__modal_opened");
+    setActiveModal("join-modal");
   }
 
   useEffect(() => {
@@ -110,8 +110,8 @@ function App() {
                 />
               </Routes>
               <JoinModal
+                isOpen={activeModal === "join-modal"}
                 handleOutsideClick={handleOutsideClick}
-                isOpen={activeModal === "join__modal_opened"}
                 onClose={onClose}
               />
               {/* Components of the Staff Page */
