@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Homepage from "./Homepage";
 import ProfilePage from "./ProfilePage";
 import JoinModal from "./JoinModal";
+import AddClassModal from "./AddClassModal";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -111,6 +112,11 @@ function App() {
               </Routes>
               <JoinModal
                 isOpen={activeModal === "join-modal"}
+                handleOutsideClick={handleOutsideClick}
+                onClose={onClose}
+              />
+              <AddClassModal
+                isOpen={activeModal === "add-class"}
                 handleOutsideClick={handleOutsideClick}
                 onClose={onClose}
               />

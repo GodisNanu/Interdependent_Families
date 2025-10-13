@@ -11,7 +11,7 @@ function JoinModal({ isOpen, handleOutsideClick, onClose }) {
   return (
     <>
       <div
-        className={`modal join-modal ${isOpen ? "join__modal_opened" : ""}`}
+        className={`modal join-modal ${isOpen ? "add__class_opened" : ""}`}
         onClick={handleOutsideClick}
       >
         <div className="join__modal-content">

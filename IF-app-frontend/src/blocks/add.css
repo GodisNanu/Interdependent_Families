@@ -1,4 +1,4 @@
-.join-modal {
+.add-class {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@
   z-index: 1000;
 } */
 
-.join__modal-content {
+.add__class-content {
   position: relative;
   padding: 26px;
   width: 75%;
@@ -34,11 +34,11 @@
   z-index: 1000;
 }
 
-.join__modal_opened {
+.add__class_opened {
   visibility: visible;
 }
 
-.join__modal-title {
+.add__class-title {
   margin: 0;
   font-family: "Londrina-Regular", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
@@ -46,7 +46,7 @@
   padding: 26px;
 }
 
-.join__modal-close {
+.add__class-close-button {
   position: absolute;
   border: none;
   top: 20px;
@@ -62,7 +62,7 @@
   z-index: 1001;
 }
 
-.join__preloader-overlay {
+.add__class-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,7 +72,7 @@
 }
 
 /* @media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
-  .join-modal {
+  .add-class {
     left: 30px;
   }
 } */
