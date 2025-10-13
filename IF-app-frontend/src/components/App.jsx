@@ -11,7 +11,7 @@ import JoinModal from "./JoinModal";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [isLoading, setIsLoading] = useState(false);
+  /* const [isLoading, setIsLoading] = useState(false); */
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeModal, setActiveModal] = useState("");
 
@@ -56,6 +56,21 @@ function App() {
   function handleJoinClick() {
     setActiveModal("join__modal_opened");
   }
+
+  useEffect(() => {
+    if (!activeModal) return;
+    const handleEscClose = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleEscClose);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscClose);
+    };
+  }, [activeModal]);
 
   return (
     <>
