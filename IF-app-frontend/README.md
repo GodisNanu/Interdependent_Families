@@ -27,7 +27,8 @@ HTML, CSS, JAVASCRIPT, REACTJS, JSX, REST API, GITHUB, FIGMA, JSON
 Later plans to implement a staff signin and features just for staff and manageent of the co-op. Also plans to implement a place for group discussions/chat and inbox where private messages can be sent between users.  Will also add reviews section to the cards to see reviews for each class.
 
 ## Links
-coming soon...
+Project Deployed at:
+https://github.com/GodisNanu/Interdependent_Families/deployments/github-pages
 
 # React + Vite
 
