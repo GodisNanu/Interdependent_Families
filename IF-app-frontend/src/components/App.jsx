@@ -7,6 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Homepage from "./Homepage";
 import ProfilePage from "./ProfilePage";
+import JoinModal from "./JoinModal";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,16 @@ function App() {
       setLoading(false);
     }, 2000);
   }, []);
+
+  const onClose = () => {
+    setActiveModal("");
+  };
+
+  const handleOutsideClick = (e) => {
+    if (e.target.classList.contains("modal")) {
+      onClose();
+    }
+  };
 
   function handleAddClassClick() {
     setActiveModal("add-class");
@@ -43,7 +54,7 @@ function App() {
   }
 
   function handleJoinClick() {
-    setActiveModal("join");
+    setActiveModal("join__modal_opened");
   }
 
   return (
@@ -83,6 +94,11 @@ function App() {
                   }
                 />
               </Routes>
+              <JoinModal
+                handleOutsideClick={handleOutsideClick}
+                isOpen={activeModal === "join__modal_opened"}
+                onClose={onClose}
+              />
               {/* Components of the Staff Page */
               /* Modals */}
               <Footer />

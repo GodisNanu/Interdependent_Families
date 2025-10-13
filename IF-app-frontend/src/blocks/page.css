@@ -1,5 +1,6 @@
 .page {
   overflow: hidden;
+  width: 100%;
 }
 
 .page__content {
