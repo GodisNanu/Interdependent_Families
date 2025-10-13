@@ -3,7 +3,7 @@
   width: 100%;
   flex-wrap: wrap;
   padding-top: 300px;
-  background: rgba(0, 0, 0, 0.8);
+  background: white;
 }
 
 .homepage__hero-section {
@@ -15,11 +15,15 @@
 .homepage__hero-section-image {
   max-width: 100%;
   object-fit: fill;
+  justify-self: center;
+  margin: 0 auto;
+  padding: 26px;
 }
 
 .homepage__about-section {
   color: rgba(255, 255, 255, 1);
-  background: rgba(49, 50, 65, 0.8);
+  background: rgba(0, 0, 0, 0.85);
+  padding: 26px;
 }
 
 .homepage__about-section-title {
@@ -43,26 +47,38 @@
 .homepage__available-classes {
   width: 100%;
   color: rgba(255, 255, 255, 1);
-  background: rgba(49, 50, 65, 0.8);
+  background: rgba(0, 0, 0, 0.65);
+  margin: 26px;
 }
 
-.homepage__available-classes-title {
-  font-family: "LondrinaSolid-Regular", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  padding: 26px;
-  text-align: center;
+.homepage__available-classes .slick-dots {
   position: relative;
+  padding: 5px;
+  margin-top: 15px;
+}
+.homepage__available-classes .slick-dots li {
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+  margin: 5px;
 }
 
-.homepage__available-classes-description {
-  font-family: "LondrinaSolid-Light", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-  font-size: 38px;
-  padding: 26px;
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
+.homepage__available-classes .slick-dots li button {
+  width: 48px;
+  height: 48px;
+}
+
+.homepage__available-classes .slick-dots li button:before {
+  width: 48px;
+  height: 48px;
+  color: white;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.homepage__available-classes .slick-dots li.slick-active button:before {
+  opacity: 0.85;
+  color: white;
 }
 
 .homepage__membership-section {

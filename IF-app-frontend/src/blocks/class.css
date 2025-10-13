@@ -1,7 +1,5 @@
 .class__section {
-}
-
-.class__carousel {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .class__carousel-header {
@@ -50,6 +48,8 @@
   font-size: 48px;
   color: yellow;
   text-align: center;
+  margin: auto;
+  padding: 26px;
 }
 
 .class__card-description-label {
@@ -57,13 +57,14 @@
   font-weight: 100;
   font-size: 36px;
   padding: 26px;
+  margin-top: 0;
 }
 
 .class__card-description {
   font-family: "LondrinaSolid-Thin", Times, serif;
   font-weight: 100;
   font-size: 32px;
-  padding: 36px;
+  padding: 10px;
   text-align: justify;
 }
 

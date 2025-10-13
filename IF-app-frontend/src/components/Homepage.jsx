@@ -52,16 +52,10 @@ function Homepage({ isLoggedIn, handleJoinClick }) {
           </p>
         </section>
         <section className="homepage__available-classes">
-          <h2 className="homepage__available-classes-title">
-            Available Classes
-          </h2>
           <ClassSection
             isLoggedIn={isLoggedIn}
             handleJoinClick={handleJoinClick}
           />
-          <p className="homepage__available-classes-description">
-            Coming soon... 2026 Summer Classes
-          </p>
         </section>
         <section className="homepage__membership-section">
           <img

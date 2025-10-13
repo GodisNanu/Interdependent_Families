@@ -4,7 +4,7 @@
   width: 100%;
   flex-wrap: wrap;
   padding-top: 300px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: white;
 }
 
 .profile__page-hero {
@@ -54,7 +54,7 @@
 
 .profile__page-calendar {
   width: 100vw;
-  background: rgba(49, 50, 65, 0.8);
+  margin: 26px;
 }
 
 .profile__page-calendar-heading {
@@ -69,4 +69,34 @@
   width: 100%;
   color: rgba(255, 255, 255, 1);
   background: rgba(49, 50, 65, 0.8);
+}
+
+.profile__page-available-classes .slick-dots {
+  position: relative;
+  padding: 5px;
+  margin-top: 15px;
+}
+.profile__page-available-classes .slick-dots li {
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.profile__page-available-classes .slick-dots li button {
+  width: 48px;
+  height: 48px;
+}
+
+.profile__page-available-classes .slick-dots li button:before {
+  width: 48px;
+  height: 48px;
+  color: white;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.profile__page-available-classes .slick-dots li.slick-active button:before {
+  opacity: 0.85;
+  color: white;
 }
