@@ -40,14 +40,14 @@ function App() {
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-    setActiveModal("");
+    onClose();
     navigate("/");
   };
 
   const handleLogin = () => {
     setIsLoggedIn(true);
     navigate("/profile");
-    setActiveModal("");
+    onClose();
   };
 
   function handleAddClassClick() {
