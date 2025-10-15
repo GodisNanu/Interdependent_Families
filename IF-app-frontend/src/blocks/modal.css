@@ -62,7 +62,7 @@
   position: relative;
   padding: 38px;
   width: 75%;
-  height: 75%;
+  height: fit-content;
   border: 2px solid rgba(89, 206, 89, 0.35);
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.85);
@@ -125,7 +125,7 @@
 
 .modal__submit {
   margin-top: 22px;
-  margin-bottom: 0;
+  margin-bottom: 100px;
   padding: 8px 16px;
   background-color: rgba(0, 0, 0, 0.85);
   border: none;
@@ -137,6 +137,7 @@
   font-weight: 900;
   font-size: 48px;
   cursor: pointer;
+  align-self: flex-start;
 }
 
 .modal__submit:hover {
@@ -154,8 +155,9 @@
   font-weight: 100;
   font-size: 48px;
   color: yellow;
-  position: absolute;
-  bottom: 45px;
-  left: 26px;
   cursor: pointer;
+  position: absolute;
+  align-self: flex-end;
+  margin-top: 100px;
+  bottom: 5px;
 }
