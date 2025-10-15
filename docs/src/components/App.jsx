@@ -86,68 +86,66 @@ function App() {
       {loading ? (
         <Loading />
       ) : (
-        <>
-          <div className="page">
-            <div className="page__content">
-              <Header
-                isLoggedIn={isLoggedIn}
-                handleAddClassClick={handleAddClassClick}
-                handleLogoutClick={handleLogoutClick}
-                handleLoginClick={handleLoginClick}
-                handleJoinClick={handleJoinClick}
+        <div className="page">
+          <div className="page__content">
+            <Header
+              isLoggedIn={isLoggedIn}
+              handleAddClassClick={handleAddClassClick}
+              handleLogoutClick={handleLogoutClick}
+              handleLoginClick={handleLoginClick}
+              handleJoinClick={handleJoinClick}
+            />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Homepage
+                    isLoggedIn={isLoggedIn}
+                    handleJoinClick={handleJoinClick}
+                  />
+                }
               />
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <Homepage
+              <Route
+                path="/profile"
+                element={
+                  <ProtectedRoute isLoggedIn={isLoggedIn}>
+                    <ProfilePage
                       isLoggedIn={isLoggedIn}
                       handleJoinClick={handleJoinClick}
                     />
-                  }
-                />
-                <Route
-                  path="/profile"
-                  element={
-                    <ProtectedRoute isLoggedIn={isLoggedIn}>
-                      <ProfilePage
-                        isLoggedIn={isLoggedIn}
-                        handleJoinClick={handleJoinClick}
-                      />
-                    </ProtectedRoute>
-                  }
-                />
-              </Routes>
-              <JoinModal
-                isOpen={activeModal === "join-modal"}
-                handleOutsideClick={handleOutsideClick}
-                onClose={onClose}
+                  </ProtectedRoute>
+                }
               />
-              <LoginModal
-                handleOutsideClick={handleOutsideClick}
-                isOpen={activeModal === "login"}
-                handleLogin={handleLogin}
-                onClose={onClose}
-                handleJoinClick={handleJoinClick}
-                newError={newError}
-              />
-              <AddClassModal
-                isOpen={activeModal === "add-class"}
-                handleOutsideClick={handleOutsideClick}
-                onClose={onClose}
-              />
-              <LogoutModal
-                handleOutsideClick={handleOutsideClick}
-                isOpen={activeModal === "logout-modal"}
-                handleLogout={handleLogout}
-                onClose={onClose}
-              />
-              {/* Components of the Staff Page */
-              /* Modals */}
-              <Footer />
-            </div>
+            </Routes>
+            <JoinModal
+              isOpen={activeModal === "join-modal"}
+              handleOutsideClick={handleOutsideClick}
+              onClose={onClose}
+            />
+            <LoginModal
+              handleOutsideClick={handleOutsideClick}
+              isOpen={activeModal === "login"}
+              handleLogin={handleLogin}
+              onClose={onClose}
+              handleJoinClick={handleJoinClick}
+              newError={newError}
+            />
+            <AddClassModal
+              isOpen={activeModal === "add-class"}
+              handleOutsideClick={handleOutsideClick}
+              onClose={onClose}
+            />
+            <LogoutModal
+              handleOutsideClick={handleOutsideClick}
+              isOpen={activeModal === "logout-modal"}
+              handleLogout={handleLogout}
+              onClose={onClose}
+            />
+            {/* Components of the Staff Page */
+            /* Modals */}
+            <Footer />
           </div>
-        </>
+        </div>
       )}
     </>
   );

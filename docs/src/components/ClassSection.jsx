@@ -54,24 +54,23 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
   };
 
   return (
-    <>
-      <section className="class__section">
-        <div className="class__carousel">
-          <h2 className="class__carousel-header"> Fall 2025 Classes</h2>
-          <div className="class__carousel-feature">
-            <Slider {...settings}>
-              {data.map((event) => (
-                <ClassCard
-                  isLoggedIn={isLoggedIn}
-                  item={event}
-                  handleJoinClick={handleJoinClick}
-                />
-              ))}
-            </Slider>
-          </div>
+    <section className="class__section">
+      <div className="class__carousel">
+        <h2 className="class__carousel-header"> Fall 2025 Classes</h2>
+        <div className="class__carousel-feature">
+          <Slider {...settings}>
+            {data.map((event) => (
+              <ClassCard
+                key={event.id}
+                isLoggedIn={isLoggedIn}
+                item={event}
+                handleJoinClick={handleJoinClick}
+              />
+            ))}
+          </Slider>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
