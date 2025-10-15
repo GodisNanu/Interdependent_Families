@@ -64,6 +64,11 @@
   z-index: 1001;
 }
 
+.logout__modal-close:hover {
+  opacity: 0.8;
+  transform: rotateY(30deg);
+}
+
 .logout__modal-buttons {
   padding-top: 100px;
   margin: auto;
@@ -85,6 +90,11 @@
   align-self: center;
 }
 
+.logout__modal-confrim-button:hover {
+  color: rgba(255, 255, 0, 0.5);
+  transform: scale(1.02);
+}
+
 .logout__modal-cancel-button {
   color: blue;
   border: none;
@@ -95,6 +105,11 @@
   cursor: pointer;
   padding: 26px;
   margin: 10px;
+}
+
+.logout__modal-cancel-button:hover {
+  color: rgba(0, 0, 255, 0.5);
+  transform: scale(1.02);
 }
 
 .logout__modal-overlay {

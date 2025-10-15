@@ -73,14 +73,16 @@ const LoginModal = ({
         )}
       </label>
       {newError && <p className="modal__input-error"> {newError}</p>}
-      <button
-        className="modal__alternative-button"
-        type="button"
-        onClick={handleJoinClick}
-      >
-        {" "}
-        Or Become a Member{" "}
-      </button>
+      <div className="modal__alternative-button-container">
+        <button
+          className="modal__alternative-button"
+          type="button"
+          onClick={handleJoinClick}
+        >
+          {" "}
+          Or Become a Member{" "}
+        </button>
+      </div>
     </ModalWithForm>
   );
 };

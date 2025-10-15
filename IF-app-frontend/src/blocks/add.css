@@ -44,6 +44,7 @@
   font-weight: 400;
   font-size: 48px;
   padding: 26px;
+  cursor: default;
 }
 
 .add__class-close-button {
@@ -60,6 +61,11 @@
   background-color: transparent;
   cursor: pointer;
   z-index: 1001;
+}
+
+.add__class-close-button:hover {
+  opacity: 0.8;
+  transform: rotateY(30deg);
 }
 
 .add__class-overlay {
