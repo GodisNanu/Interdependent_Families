@@ -66,7 +66,6 @@ const LoginModal = ({
           onChange={handleChange}
           value={values.password || ""}
           required
-          minLength={"8"}
           autoComplete="current-password"
         />
         {errors.password && (

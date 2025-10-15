@@ -7,18 +7,20 @@ function validateBasicEmail(email) {
   } else if (!emailRegex.test(email)) {
     return "Invalid email format";
   }
-  return "";
 }
 
 function validateBasicPassword(password) {
-  const passwordRegex =
-    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+  const passwordRegex = new RegExp(
+    // Positive lookaheads (enforce requirements)
+    "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])" +
+      // Match 8 or more characters from the *full* allowed set
+      "[A-Za-z\\d@$!%*#?&\\.,\\-_+=()\\s]{8,}$"
+  );
   if (password.length < 1) {
     return "Field is required";
   } else if (!passwordRegex.test(password)) {
     return "Password must contain atlease 8 characters, 1 number, 1 letter, and 1 special character";
   }
-  return "";
 }
 
 export function useFormAndValidation() {
@@ -34,6 +36,9 @@ export function useFormAndValidation() {
       const customError = validateBasicEmail(value);
       if (customError) {
         errorMessage = customError;
+        e.target.setCustomValidity(customError);
+      } else {
+        e.target.setCustomValidity("");
       }
     }
 
@@ -41,17 +46,23 @@ export function useFormAndValidation() {
       const customError = validateBasicPassword(value);
       if (customError) {
         errorMessage = customError;
+        e.target.setCustomValidity(customError);
+      } else {
+        e.target.setCustomValidity("");
       }
     }
 
     setValues({ ...values, [name]: value });
-    const newErrors = { ...errors, [name]: errorMessage };
-    setErrors(newErrors);
+    let currentErrors = {};
+    setErrors((prevErrors) => {
+      currentErrors = { ...prevErrors, [name]: errorMessage };
+      return currentErrors;
+    });
 
     const form = e.target.closest("form");
     const isNativeValid = form ? form.checkValidity() : true;
-    const hasErrors = Object.values(newErrors).some((error) => error);
-    setIsValid(isNativeValid && hasErrors);
+    const hasErrors = Object.values(currentErrors).some((error) => error);
+    setIsValid(isNativeValid && !hasErrors);
   };
 
   const resetForm = useCallback(
