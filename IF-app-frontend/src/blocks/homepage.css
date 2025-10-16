@@ -13,10 +13,10 @@
 }
 
 .homepage__hero-section-image {
-  max-width: 100%;
+  max-width: 90%;
   object-fit: fill;
   justify-self: center;
-  margin: 0 auto;
+  margin: auto;
   padding: 26px;
 }
 
@@ -94,4 +94,10 @@
   margin: 0 auto;
   padding: 26px;
   cursor: pointer;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
+  .homepage {
+    padding-top: 180px;
+  }
 }

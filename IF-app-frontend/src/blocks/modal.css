@@ -62,7 +62,7 @@
   position: relative;
   padding: 38px;
   width: 75%;
-  height: fit-content;
+  max-height: 90%;
   border: 2px solid rgba(89, 206, 89, 0.35);
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.85);
@@ -108,7 +108,7 @@
 .modal__label {
   font-family: "Londrina-Black", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 36px;
   color: white;
 }
 
@@ -124,22 +124,22 @@
   color: #ff4d00;
   font-family: "Londrina-Black", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 14px;
 }
 
 .modal__submit {
-  margin-top: 22px;
+  margin-top: -30px;
   margin-bottom: 100px;
   padding: 8px 16px;
   background-color: rgba(0, 0, 0, 0.85);
   border: none;
   border-radius: 5px;
   color: blue;
-  height: 100px;
-  width: 200px;
+  height: 80px;
+  width: 175px;
   font-family: "Londrina-Black", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 36px;
   cursor: pointer;
   align-self: flex-start;
 }
@@ -197,4 +197,24 @@
   color: rgba(255, 255, 0, 0.8);
   transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
+  .modal__title {
+    font-size: 28px;
+  }
+
+  .modal__label {
+    font-size: 28px;
+  }
+
+  .modal__close {
+    font-size: 28px;
+  }
+
+  .modal__submit {
+    font-size: 28px;
+    height: 50px;
+    width: 115px;
+  }
 }
