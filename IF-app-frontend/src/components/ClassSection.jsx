@@ -33,8 +33,8 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
     infinite: true,
     centerMode: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 900,
@@ -43,32 +43,23 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
           slidesToScroll: 1,
         },
       },
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
     ],
   };
 
   return (
     <section className="class__section">
-      <div className="class__carousel">
-        <h2 className="class__carousel-header"> Fall 2025 Classes</h2>
-        <div className="class__carousel-feature">
-          <Slider {...settings}>
-            {data.map((event) => (
-              <ClassCard
-                key={event.id}
-                isLoggedIn={isLoggedIn}
-                item={event}
-                handleJoinClick={handleJoinClick}
-              />
-            ))}
-          </Slider>
-        </div>
+      <h2 className="class__carousel-header"> Fall 2025 Classes</h2>
+      <div className="class__carousel-feature">
+        <Slider {...settings}>
+          {data.map((event) => (
+            <ClassCard
+              key={event.id}
+              isLoggedIn={isLoggedIn}
+              item={event}
+              handleJoinClick={handleJoinClick}
+            />
+          ))}
+        </Slider>
       </div>
     </section>
   );
