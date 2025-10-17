@@ -6,8 +6,8 @@ function ProfilePage({ isLoggedIn, handleJoinClick }) {
     <div className="profile__page">
       <section className="profile__page-hero">
         <div className="profile__page-hero-image"></div>
-        <h1 className="profile__page-hero-greeting"> Welcome Back, </h1>
-        <h2 className="profile__page-hero-text"> MemberLastName Family !</h2>
+        <h1 className="profile__page-hero-greeting"> Welcome Back </h1>
+        <h2 className="profile__page-hero-text"> MemberLastName Family </h2>
       </section>
       <section className="profile__page-calendar">
         <h2 className="profile__page-calendar-heading">

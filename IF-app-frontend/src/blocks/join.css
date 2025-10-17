@@ -77,8 +77,12 @@
   z-index: 1001;
 }
 
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
-  .join-modal {
-    left: 30px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
+  .join__modal-title {
+    font-size: 28px;
   }
-} */
+
+  .join__modal-close {
+    font-size: 28px;
+  }
+}

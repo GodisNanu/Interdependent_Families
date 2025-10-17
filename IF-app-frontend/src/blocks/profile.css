@@ -100,3 +100,40 @@
   opacity: 0.85;
   color: white;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
+  .profile__page-hero-greeting {
+    font-size: 48px;
+  }
+
+  .profile__page-hero-text {
+    font-size: 36px;
+  }
+
+  .profile__page-calendar-heading {
+    font-size: 24px;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .profile__page-available-classes .slick-dots {
+    margin-top: 5px;
+  }
+
+  .profile__page-available-classes .slick-dots li {
+    width: 24px;
+    height: 24px;
+  }
+
+  .profile__page-available-classes .slick-dots li button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .profile__page-available-classes .slick-dots li button:before {
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+  }
+}

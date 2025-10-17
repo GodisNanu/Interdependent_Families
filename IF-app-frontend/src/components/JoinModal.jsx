@@ -27,7 +27,7 @@ function JoinModal({ isOpen, handleOutsideClick, onClose }) {
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSd5ei6TWf1pcebmK1O8W1ZY63GCHExonh_bBquXDtCtgvGoCA/viewform?embedded=true"
           width="90%"
-          height="70%"
+          height="65%"
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"

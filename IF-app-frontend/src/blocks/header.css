@@ -137,4 +137,18 @@
   .header__date {
     font-size: 18px;
   }
+
+  .header__add-class-button {
+    font-size: 18px;
+  }
+
+  .header__navigation-profile-button {
+    margin-left: 5px;
+    font-size: 24px;
+  }
+
+  .header__logout-button {
+    margin-left: 5px;
+    font-size: 24px;
+  }
 }
