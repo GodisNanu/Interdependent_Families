@@ -199,7 +199,7 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .modal__title {
     font-size: 28px;
   }

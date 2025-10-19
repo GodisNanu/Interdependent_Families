@@ -77,7 +77,7 @@
   z-index: 1001;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 630px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .join__modal-title {
     font-size: 28px;
   }
