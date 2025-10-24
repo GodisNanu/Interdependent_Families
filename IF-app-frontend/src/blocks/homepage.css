@@ -1,0 +1,141 @@
+.homepage {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 300px;
+  background: white;
+}
+
+.homepage__hero-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.homepage__hero-section-image {
+  max-width: 90%;
+  object-fit: fill;
+  justify-self: center;
+  margin: auto;
+  padding: 26px;
+}
+
+.homepage__about-section {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.85);
+  padding: 26px;
+}
+
+.homepage__about-section-title {
+  font-family: "LondrinaSolid-Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  padding: 26px;
+  text-align: center;
+}
+
+.homepage__about-section-description {
+  font-family: "LondrinaSolid-Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  padding: 26px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+}
+
+.homepage__available-classes {
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.65);
+  margin: 26px auto;
+}
+
+.homepage__available-classes .slick-dots {
+  position: relative;
+  padding: 5px;
+  margin-top: 15px;
+}
+.homepage__available-classes .slick-dots li {
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.homepage__available-classes .slick-dots li button {
+  width: 48px;
+  height: 48px;
+}
+
+.homepage__available-classes .slick-dots li button:before {
+  width: 48px;
+  height: 48px;
+  color: white;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.homepage__available-classes .slick-dots li.slick-active button:before {
+  opacity: 0.85;
+  color: white;
+}
+
+.homepage__membership-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.homepage__membership-image {
+  max-width: 90%;
+  object-fit: fill;
+  justify-self: center;
+  margin: auto;
+  padding: 26px;
+  padding-top: 0;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .homepage {
+    padding-top: 180px;
+  }
+
+  .homepage__about-section-title {
+    font-size: 28px;
+  }
+
+  .homepage__about-section-description {
+    font-size: 18px;
+  }
+
+  .homepage__available-classes .slick-dots {
+    margin-top: 5px;
+  }
+
+  .homepage__available-classes .slick-dots li {
+    width: 18px;
+    height: 18px;
+  }
+
+  .homepage__available-classes .slick-dots li button {
+    width: 18px;
+    height: 18x;
+  }
+
+  .homepage__available-classes .slick-dots li button:before {
+    width: 18px;
+    height: 18x;
+    font-size: 14px;
+  }
+
+  .homepage__hero-section-image {
+    padding: 10px;
+  }
+
+  .homepage__membership-image {
+    padding: 10px;
+    padding-top: 0;
+  }
+}

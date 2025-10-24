@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.footer__signature {
+  font-family: "LondrinaSolid-Thin", Times, serif;
+  font-weight: 100;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.footer__date {
+  font-family: "LondrinaSolid-Thin", Times, serif;
+  font-weight: 100;
+  font-size: 24px;
+  margin: 10px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .footer__signature {
+    font-size: 14px;
+  }
+
+  .footer__date {
+    font-size: 14px;
+  }
+}

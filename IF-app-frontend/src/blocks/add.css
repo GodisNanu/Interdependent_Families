@@ -1,0 +1,88 @@
+.add-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 107;
+  color: white;
+}
+
+/* .join__modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+} */
+
+.add__class-content {
+  position: relative;
+  padding: 26px;
+  width: 75%;
+  height: 75%;
+  border: 2px solid rgba(89, 206, 89, 0.35);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+}
+
+.add__class_opened {
+  visibility: visible;
+}
+
+.add__class-title {
+  margin: 0;
+  font-family: "Londrina-Regular", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  padding: 26px;
+  cursor: default;
+}
+
+.add__class-close-button {
+  position: absolute;
+  border: none;
+  top: 20px;
+  right: 28px;
+  font-family: "Londrina-Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: white;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.add__class-close-button:hover {
+  opacity: 0.8;
+  transform: rotateY(30deg);
+}
+
+.add__class-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .add__class-title {
+    font-size: 28px;
+  }
+
+  .add__class-close-button {
+    font-size: 28px;
+  }
+}

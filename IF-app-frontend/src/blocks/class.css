@@ -1,0 +1,133 @@
+.class__section {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.class__carousel-header {
+  font-family: "LondrinaSolid-Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  padding: 26px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: blue;
+}
+
+.class__carousel-feature {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.class__card-content {
+  background-color: rgba(0, 0, 0, 1);
+  max-width: 90%;
+  max-height: 60%;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  border: 2px solid rgba(89, 206, 89, 0.35);
+}
+
+.slick-prev,
+.slick-next {
+  width: 48px;
+  height: 48px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: red;
+  opacity: 1;
+  font-size: 48px;
+}
+
+.class__card-title {
+  font-family: "LondrinaSolid-Light", Times, serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: yellow;
+  text-align: center;
+  margin: auto;
+  padding: 26px;
+}
+
+.class__card-description-label {
+  font-family: "LondrinaSolid-Thin", Times, serif;
+  font-weight: 100;
+  font-size: 36px;
+  padding: 26px;
+  margin-top: 0;
+}
+
+.class__card-description {
+  font-family: "LondrinaSolid-Thin", Times, serif;
+  font-weight: 100;
+  font-size: 32px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.class__card-link-section {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 26px;
+}
+.class__card-link {
+  font-family: "LondrinaSolid-Light", Times, serif;
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+  color: blue;
+  padding: 26px;
+}
+
+.class__card-link:hover {
+  color: rgba(0, 0, 255, 0.8);
+}
+
+.class__card-join-button {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  border: 2px solid rgba(89, 206, 89, 0.35);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "LondrinaSolid-Light", Times, serif;
+  font-weight: 300;
+  font-size: 48px;
+  padding: 10px;
+}
+
+.class__card-join-button:hover {
+  color: rgba(89, 206, 89, 0.35);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .class__carousel-header {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .class__card-title {
+    font-size: 24px;
+  }
+
+  .class__card-description-label {
+    font-size: 22px;
+  }
+
+  .class__card-description {
+    font-size: 18px;
+  }
+
+  .class__card-link {
+    font-size: 22px;
+  }
+
+  .class__card-join-button {
+    font-size: 24px;
+  }
+}
