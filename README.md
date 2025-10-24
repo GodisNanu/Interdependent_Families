@@ -8,6 +8,8 @@ The homepage includes basic information about the co-op along with all the curre
 
 The profile page includes this public calendar which populates after a call is made to the google calendar API as well as a different version of the current classes, which gives the user access to meet with the class on GoogleMeet. 
 
+At the moment the User can log in with any valid email and password without being a member of the co-op to test/see profile page and features.
+
 ## Features
 
 -The user can join the co-op by clicking the Join Us button, specific classes, or advertisements on the page
