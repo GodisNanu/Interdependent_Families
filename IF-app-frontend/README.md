@@ -27,6 +27,10 @@ HTML, CSS, JAVASCRIPT, REACTJS, JSX, REST API, GITHUB, FIGMA, JSON
 Later plans to implement a staff signin and features just for staff and manageent of the co-op. Also plans to implement a place for group discussions/chat and inbox where private messages can be sent between users.  Will also add reviews section to the cards to see reviews for each class.
 
 ## Links
+Figma Rough Draft: https://www.figma.com/design/Klp73WdE3xnNImQUoj9VrD/Virtual-Homeschool-Co-op?node-id=16-446&t=0s4A6zlC84lH5kzF-1
+
+Trello Board: https://trello.com/invite/b/68d4401f7b6df3503ef0f8fc/ATTIa16bb0f6490306333704bfa4ea782cc0EF0B2AC0/my-trello-board
+
 Project Deployed at:
 https://godisnanu.github.io/Interdependent_Families/
 
