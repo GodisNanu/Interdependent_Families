@@ -37,7 +37,7 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 1080,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

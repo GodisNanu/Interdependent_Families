@@ -22,7 +22,7 @@
   margin: 10px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1080px) {
   .footer__signature {
     font-size: 14px;
   }

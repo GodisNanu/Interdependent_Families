@@ -122,7 +122,7 @@
   transform: scale(1.02);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1080px) {
   .header {
     position: absolute;
     font-size: 24px;
