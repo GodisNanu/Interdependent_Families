@@ -122,6 +122,36 @@
   transform: scale(1.02);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 1080px) {
+  .header {
+    position: absolute;
+    font-size: 24px;
+  }
+
+  .header__logo {
+    max-width: 85px;
+    max-height: 85px;
+    border-radius: 30%;
+  }
+
+  .header__date {
+    font-size: 18px;
+  }
+
+  .header__add-class-button {
+    font-size: 18px;
+  }
+
+  .header__navigation-profile-button {
+    margin-left: 5px;
+    font-size: 24px;
+  }
+
+  .header__logout-button {
+    margin-left: 5px;
+    font-size: 24px;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 1080px) and (orientation: landscape) {
   .header {
     position: absolute;
