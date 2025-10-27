@@ -35,9 +35,13 @@ function ClassSection({ isLoggedIn, handleJoinClick }) {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplayspeed: 2000,
+    pauseOnHover: true,
+    mobileFirst: true,
     responsive: [
       {
-        breakpoint: 1080,
+        breakpoint: 900,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
